@@ -1,0 +1,143 @@
+.cabecalho{
+    width: 22.5rem;
+    height: 25vh;
+}
+
+.cabecalho__image{
+    width: 22rem;
+    height: 18.5rem;
+
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho__image--splash{
+    background-image: url(../../img/splash-cabecalho.png);
+}
+
+.cabecalho__image2{
+    width: 189.96px;
+    height: 243.41px;
+
+    position: absolute;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.cabecalho__image--patas{
+    background-image: url(../../img/Patas.png);
+}
+
+.cabecalho__icone{
+    width: 20px;
+    height: 23px;
+
+    margin-top: 4rem;
+    margin-left: 4rem;
+
+    background-position: center;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+}
+
+.cabecalho__icone:active{
+    background-color: var(--verde-escuro);
+
+    border-radius: 2rem;
+}
+
+.cabecalho__icone2{
+    width: 56px;
+    height: 56px;
+
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cabecalho__icone2:hover{
+    cursor: pointer;
+}
+
+@media(min-width:361px){
+    .cabecalho__image{
+        width: 561px;
+        height: 470px;
+    
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        display: flex;
+        flex-direction: row;
+
+        z-index: 1;
+    }
+
+    .cabecalho__image--splash{
+        background-image: url(../../img/768px/splash.png);
+    }
+
+    .cabecalho__imagem--adopet{
+        width: 128px;
+        height: 31px;
+
+        margin-left: 4rem;
+        margin-top: 3rem;
+
+        background-image: url(../../img/768px/adopet.png);
+    }
+
+    .cabecalho__image2{
+        width: 224px;
+        height: 339px;
+    
+        background-position: top right;
+        right: 0rem;
+    }
+    
+    .cabecalho__image--patas{
+        background-image: url(../../img/768px/Patas.png);
+    }
+
+    .cabecalho__icone2{
+        position: absolute;
+        right: -8.5rem;
+
+        margin-top: 2rem;
+    }
+
+    .cabecalho__icone{
+        margin-top: 3rem;
+    }
+}
+
+@media(min-width:769px){
+
+    .cabecalho__icone{
+        margin-top: 4rem;
+    }
+    
+    .cabecalho__icone2{
+        margin-top: 3rem;
+    }
+
+    .cabecalho__imagem--adopet{
+        margin-top: 4rem;
+    }
+
+    .cabecalho__icone2{
+        position: absolute;
+        right: -40rem;
+    }
+
+    .cabecalho__icone2:hover{
+        cursor: pointer;
+    }
+}

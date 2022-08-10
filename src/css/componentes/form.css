@@ -1,0 +1,111 @@
+.form{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 6.55rem;
+    margin-top: 1rem;
+}
+
+.form--label{
+    font-family: inherit;
+    font-size: inherit;
+
+    color: var(--cinza-escuro);
+
+    line-height: 1.5rem;
+    margin-top: .9rem;
+    margin-bottom: .5rem;
+}
+
+.form--perfil{
+    display: flex;
+    flex-direction: column;
+
+    width: 18.5rem;
+
+    align-items: center;
+}
+
+.form--perfil:focus{
+    background-color: var(--cinza-escuro);
+}
+
+.form--imagem{
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+
+    border: 3px hidden none;
+    border-radius: 30px;
+    
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    vertical-align: middle;
+
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+
+.form--picture{
+    max-width: 100%;
+}
+
+.form--usuario{
+    background-image: url(../..//img/Usuário.png);
+}
+
+.form--texto{
+    font-family: inherit;
+    font-size: 0.75rem;
+
+    line-height: 1.5rem;
+
+    margin-top: .5rem;
+
+    background-color: var(--cinza-claro);
+    color: var(--coral);
+
+    border: none;
+}
+
+.form--texto:hover,.form--usuario:hover{
+    cursor: pointer;
+
+    text-decoration: underline;
+}
+
+@media(min-width:361px){
+
+    .form--label{
+        display: block;
+    }
+
+    .form--login{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .form--mensagem{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form--perfil{
+        width: 512px;
+    }
+}
+
+@media(min-width:769px){
+    .form--label{
+        margin-left: 30px;
+    }
+}

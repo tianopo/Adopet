@@ -1,0 +1,33 @@
+.caixa--mensagem{
+    background-color: var(--cinza-claro);
+
+    width: 312px;
+
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    text-align: left;
+
+    border-radius: 10px;
+}
+
+@media(min-width:361px){
+
+    .caixa--mensagem{
+        width: 524px;
+        z-index: 0;
+    }
+}
+
+@media(min-width:769px){
+
+    .caixa--mensagem{
+        width: 552px;
+    }
+}

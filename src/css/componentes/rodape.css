@@ -1,0 +1,36 @@
+.rodape__1{
+    height: 10rem;
+    width: 360px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: var(--verde);
+    
+    color: var(--branco);
+
+    font-size: 1rem;
+}
+
+@media(min-width:361px){
+    
+    .rodape__1{
+        width: 768px;
+    }
+
+    .rodape--espacamento{
+        margin-top: 185px;
+    }
+}
+
+@media(min-width:769px){
+    
+    .rodape__1{
+        width: 1440px;
+    }
+
+    .rodape--login{
+        height: 20rem;
+    }
+}

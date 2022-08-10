@@ -1,0 +1,84 @@
+input{
+    background-color: var(--cinza-claro);
+
+    width: 312px;
+    height: 40px;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+
+    margin-bottom: 1rem;
+
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: inherit;
+}
+
+input::placeholder{
+    color: #bcbcbc;
+
+    text-align: center;
+}
+
+::-webkit-input-placeholder{
+    color: #bcbcbc;
+
+    font-family: var(--font-poppins);
+    font-size: 14px;
+
+    text-align: left;
+    line-height: 1.25rem;
+
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+
+.input--mensagem{
+    background-color: var(--branco);
+    
+    z-index: 2;
+
+    width: auto;
+
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.input--mensagem::placeholder{
+    text-align: left;
+}
+
+.input--icone{
+    padding-right: 1.875rem;
+
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+
+    cursor: pointer;
+}
+
+.input--olho{
+    background-image: url(../../img/olho-invisivel.png);
+}
+
+@media(min-width:361px){
+    .input{
+        width: 344px;
+    }
+
+    .input--mensagem{
+        width: 492px;
+    }
+}
+
+@media(min-width:769px){
+    .input--espacamento{
+        width: 552px;
+    }
+}

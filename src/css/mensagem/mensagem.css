@@ -1,0 +1,39 @@
+#caixa-mensagem{
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.mensagem-email{
+    position: relative;
+    width: 17rem;
+    
+    display: block;
+
+    background-color: var(--verde);
+
+    padding: 1rem 0;
+
+    margin: 1rem 2.5rem;
+
+    font-family: inherit;
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    color: var(--azul);
+
+    border: 1px solid black;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px #0000000F;
+}
+
+@media(min-width: 361px) {
+    
+}
+
+@media(min-width: 769px) {
+    
+}
