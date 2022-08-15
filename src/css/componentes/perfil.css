@@ -1,0 +1,83 @@
+.caixa--perfil{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 6.55rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+    background-color: var(--cinza-claro);
+
+    width: 312px;
+
+    margin-top: 1rem;
+
+    padding-bottom: 1rem;
+}
+
+.form--alinhar{
+    text-align: left;
+
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+}
+
+.input--perfil{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--branco);
+    
+    width: 280px;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.input--perfil::placeholder{
+        text-align: left;
+}
+
+::-webkit-input--perfil-placeholder{
+    color: #bcbcbc;
+
+    font-family: var(--font-poppins);
+    font-size: 14px;
+
+    text-align: left;
+    line-height: 1.25rem;
+
+    padding-top: .5rem;
+    padding-left: 1rem;
+}
+
+#textarea{
+    width: 240px;
+}
+
+@media(min-width: 361px){
+
+    .caixa--perfil{    
+        width: 524px;
+
+        margin-left: 5rem;
+    }
+
+    .input--perfil{
+        width: 492px;
+    }
+
+    #textarea{
+        width: 450px;
+    }
+}
+
+@media(min-width: 769px){
+
+    .caixa--perfil{
+        margin-left: 26rem;
+    
+        width: 552px;
+    }
+}

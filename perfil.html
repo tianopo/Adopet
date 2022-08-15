@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/pet.png"/>
+    <title>Adopet - Perfil</title>
+    <link rel="stylesheet" href="src/css/base/base.css">
+    <link rel="stylesheet" href="src/css/componentes/carregamento.css">
+    <link rel="stylesheet" href="src/css/componentes/menu.css">
+    <link rel="stylesheet" href="src/css/componentes/botao.css">
+    <link rel="stylesheet" href="src/css/componentes/rodape.css">
+    <link rel="stylesheet" href="src/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="src/css/componentes/form.css">
+    <link rel="stylesheet" href="src/css/componentes/input.css">
+    <link rel="stylesheet" href="src/css/componentes/imagens--menu.css">
+    <link rel="stylesheet" href="src/css/componentes/caixa-home.css">
+    <link rel="stylesheet" href="src/css/componentes/perfil.css">
+</head>
+<body onload="carrega();">
+    <header class="cabecalho">
+        <nav class="cabecalho__home--nav">
+            <ul class="cabecalho__image cabecalho__image--splash">
+                <li class="cabecalho__imagem--adopet"></li>
+                <li class="cabecalho__icone" id="home">
+                    <a href="index.html">
+                        <img src="src/img/Casa.png" alt="icone de casa">
+                    </a>
+                </li>
+                <li class="cabecalho__icone" id="mensagem">
+                    <a href="mensagem.html">
+                        <img src="src/img/Mensagens.png" alt="icone de envelope">
+                    </a>
+                </li>
+                <li class="cabecalho__icone2" id="usuario">
+                    <a href="perfil.html">
+                        <img src="src/img/Usuário.png" alt="icone de envelope">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="menu menu__home--padding menu--home">
+        <ul>
+            <li class="paragrafo--login">
+                Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.
+            </li>
+        </ul>
+    </article>
+    <form class="caixa--perfil">
+        <div class="pre-carregamento">
+            <div class="efeito-carregamento"></div>
+        </div>
+        <h2 class="titulo--perfil">Perfil</h2>
+        <div class="form--alinhar">
+            <label for="foto" class="form--label caixa--titulo">Foto</label>
+
+            <label class="form--perfil" tabindex="0">
+                <span class="form--imagem"></span>
+                <input type="file" accept="image/*" id="upfile" class="picture--input">
+                <span class="form--texto">Clique na foto para editar</span>
+            </label>
+
+            <label for="nome" class="form--label caixa--titulo">Nome</label>
+            <input type="text" name="nome" id="nome" class="input input--perfil" placeholder="Matheus Henrique">
+                
+            <label for="tel" class="form--label caixa--titulo">Telefone</label>
+            <input type="tel" name="tel" id="tel" class="input input--perfil" placeholder="55 11 XXXXXXXXX">
+
+            <label for="pet" class="form--label caixa--titulo">Cidade</label>
+            <input type="email" name="pet" id="pet" class="input input--perfil" placeholder="São Paulo">
+
+            <label for="textarea" class="form--label caixa--titulo">Sobre</label>
+            <textarea name="textarea" id="textarea" cols="10" rows="12" class="input input--perfil" placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit" class="botao botao--texto botao--espacamento-login botao--espacamento-mensagem">Salvar</button>
+            <span class="menu__imagem__lateral--login menu__imagem__lateral--splash menu__imagem__lateral--cadastro"></span>
+        </div>
+    </form>
+    <footer class="rodape__1">2022 - Desenvolvido por Matheus H.</footer>
+    <script src="src/js/controller/carregamento.js"></script>
+    <script type="module" src="src/js/perfil.js"></script>
+</body>
+</html>

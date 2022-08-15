@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/pet.png"/>
+    <title>Adopet - Mensagem</title>
+    <link rel="stylesheet" href="src/css/base/base.css">
+    <link rel="stylesheet" href="src/css/componentes/menu.css">
+    <link rel="stylesheet" href="src/css/componentes/botao.css">
+    <link rel="stylesheet" href="src/css/componentes/rodape.css">
+    <link rel="stylesheet" href="src/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="src/css/componentes/form.css">
+    <link rel="stylesheet" href="src/css/componentes/input.css">
+    <link rel="stylesheet" href="src/css/componentes/imagens--menu.css">
+    <link rel="stylesheet" href="src/css/componentes/caixa-home.css">
+    <link rel="stylesheet" href="src/css/componentes/mensagem.css">
+    <link rel="stylesheet" href="src/css/componentes/carregamento.css">
+</head>
+<body onload="carrega();">
+    <header class="cabecalho">
+        <nav class="cabecalho__home--nav">
+            <ul class="cabecalho__image cabecalho__image--splash">
+                <li class="cabecalho__imagem--adopet"></li>
+                <li class="cabecalho__icone" id="home">
+                    <a href="index.html">
+                        <img src="src/img/Casa.png" alt="icone de casa">
+                    </a>
+                </li>
+                <li class="cabecalho__icone" id="mensagem">
+                    <a href="mensagem.html">
+                        <img src="src/img/Mensagens.png" alt="icone de envelope">
+                    </a>
+                </li>
+                <li class="cabecalho__icone2" id="usuario">
+                    <a href="perfil.html">
+                        <img src="src/img/Usuário.png" alt="icone de envelope">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="menu menu__home--padding menu--home">
+        <ul>
+            <li class="paragrafo--login">
+                Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:
+            </li>
+        </ul>
+    </article>
+    <article class="form--mensagem">
+        <form class="form caixa--mensagem">
+            <label for="nome" class="form--label caixa--titulo">Nome</label>
+            <input type="text" name="nome" id="nome" class="input--mensagem" 
+            placeholder="Insira seu nome completo" autofocus required>
+                
+            <label for="tel" class="form--label caixa--titulo">Telefone</label>
+            <input type="tel" name="tel" id="tel" class="input--mensagem" placeholder="Insira seu telefone e/ou whatsapp">
+
+            <label for="pet" class="form--label caixa--titulo">Nome do animal</label>
+            <input type="text" name="pet" id="pet" class="input--mensagem" 
+            placeholder="Por qual animal você se interessou?" required>
+
+            <label for="textarea" class="form--label caixa--titulo">Mensagem</label>
+            <textarea name="textarea" id="textarea" cols="10" rows="15" class="input--mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+            <button type="submit" class="botao botao--texto botao--espacamento-login botao--espacamento-mensagem">Enviar</button>
+            <span class="menu__imagem__lateral--login menu__imagem__lateral--splash"></span>
+            <div class="pre-carregamento">
+                <div class="efeito-carregamento"></div>
+            </div>
+        </form>
+    </article>
+    <footer class="rodape__1">2022 - Desenvolvido por Matheus H.</footer>
+    <script src="src/js/controller/carregamento.js"></script>
+    <script type="module" src="src/js/mensagem.js"></script>
+</body>
+</html>

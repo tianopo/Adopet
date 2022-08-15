@@ -1,0 +1,97 @@
+.botao{
+    background-color: var(--coral);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 11.25rem;
+    height: 2.5rem;
+
+    border: 1px solid var(--coral);
+    border-radius: 6px;
+
+    box-shadow: 2px 2px 4px var(--sombra-botao);
+}
+
+.botao:hover{
+    cursor: pointer;
+}
+
+.botao:active{
+    background-color: var(--coral-escuro);
+}
+
+.botao--espacamento{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    margin-left: 6rem;
+}
+
+.botao--espacamento-login{
+    margin-top: 2rem;
+}
+
+.botao--texto{
+    font-family: inherit;
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-size: 1rem;
+
+    color: var(--branco);
+}
+
+.botao--espacamento-mensagem{
+    margin-left: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+@media(min-width:361px){
+
+    .botao{
+        width: 344px;
+        height: 3rem;
+        
+        font-size: 18px;
+
+        margin-bottom: 1rem;
+    }
+
+    #cadastro-conta{
+        width: 164px;
+        height: 40px;
+
+        margin-left: 18.5rem;
+    }
+
+    .botao--espacamento{
+        margin-left: none;
+    }
+
+    .botao--espacamento-login{
+        margin-right: 6rem;
+    }
+}
+
+@media(min-width:769px){
+    
+    .botao{
+        width: 362px;
+    }
+
+    .botao--texto{
+        font-size: 18px;
+    }
+
+    #cadastro-conta{
+        width: 174px;
+
+        margin-left: 39rem;
+    }
+
+    .botao--texto::after{
+        content: '!';
+    }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/pet.png"/>
+    <title>Adopet - Login</title>
+    <link rel="stylesheet" href="src/css/base/base.css">
+    <link rel="stylesheet" href="src/css/componentes/menu.css">
+    <link rel="stylesheet" href="src/css/componentes/botao.css">
+    <link rel="stylesheet" href="src/css/componentes/rodape.css">
+    <link rel="stylesheet" href="src/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="src/css/componentes/form.css">
+    <link rel="stylesheet" href="src/css/componentes/input.css">
+    <link rel="stylesheet" href="src/css/componentes/imagens--menu.css">
+    <link rel="stylesheet" href="src/css/mensagem/mensagem.css">
+    <link rel="stylesheet" href="src/css/componentes/carregamento.css">
+</head>
+<body onload="carrega();">
+    <header class="cabecalho">
+        <nav>
+            <ul class="cabecalho__image cabecalho__image--splash">
+                <li class="cabecalho__imagem--adopet"></li>
+                <li class="cabecalho__icone" id="home">
+                    <a href="index.html">
+                        <img src="src/img/Casa.png" alt="icone de casa">
+                    </a>
+                </li>
+                <li class="cabecalho__icone" id="mensagem">
+                    <a href="mensagem.html">
+                        <img src="src/img/Mensagens.png" alt="icone de envelope">
+                    </a>
+                </li>
+            </ul>
+            <span class="cabecalho__image2 cabecalho__image--patas"></span>
+        </nav>    
+    </header>
+    <div class="pre-carregamento">
+        <div class="efeito-carregamento"></div>
+    </div>
+    <article class="menu">
+        <span class="menu__imagem menu__imagem--logo2"></span>
+        <ul>
+            <li class="paragrafo--login">Já tem conta? Faça seu login:</li>
+        </ul>
+    </article>
+    <form class="form">
+        <div class="menu__imagem__lateralesq menu__imagem__lateral--splashesq form--login">
+            <ul id="caixa-mensagem"></ul>
+            <label for="email" class="form--label">E-mail</label>
+            <input type="email" name="email" id="email" class="input input--espacamento" placeholder="Insira seu email" required autofocus>
+
+            <label for="senha" class="form--label">Senha</label>
+            <input type="password" name="senha" id="senha" class="input input--icone input--olho" 
+            placeholder="Insira sua senha" minlength="6" required>
+
+            <span class="paragrafo--esqueci-senha">Esqueci minha senha</span>
+
+            <button type="submit" class="botao botao--espacamento botao--texto botao--espacamento-login" id="botao-login">Entrar</button>
+            <span class="menu__imagem__lateral--login menu__imagem__lateral--splash menu__imagem__lateral--cadastro"></span>
+        </div>
+    </form>
+    <footer class="rodape__1 rodape--login">2022 - Desenvolvido por Matheus H.</footer>
+    <script src="src/js/controller/carregamento.js"></script>
+    <script type="module" src="src/js/login.js"></script>
+</body>
+</html>

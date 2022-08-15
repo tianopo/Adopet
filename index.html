@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/pet.png">
+    <title>Adopet - Inicial</title>
+    <link rel="stylesheet" href="src/css/base/base.css">
+    <link rel="stylesheet" href="src/css/componentes/menu.css">
+    <link rel="stylesheet" href="src/css/componentes/botao.css">
+    <link rel="stylesheet" href="src/css/componentes/rodape.css">
+    <link rel="stylesheet" href="src/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="src/css/componentes/imagens--menu.css">
+    <link rel="stylesheet" href="src/css/componentes/carregamento.css">
+</head>
+<body class="body--inicio" onload="carrega();">
+    <header class="cabecalho">
+        <nav>
+           <ul class="cabecalho__image cabecalho__image--splash">
+                <li class="cabecalho__imagem--adopet"></li>
+                <li class="cabecalho__icone" id="home">
+                    <a href="index.html">
+                        <img src="src/img/Casa.png" alt="icone de casa">
+                    </a>
+                </li>
+                <li class="cabecalho__icone" id="mensagem">
+                    <a href="mensagem.html">
+                        <img src="src/img/Mensagens.png" alt="icone de envelope">
+                    </a>
+                </li>
+            </ul> 
+        </nav>    
+    </header>
+    <div class="pre-carregamento">
+        <div class="efeito-carregamento"></div>
+    </div>
+    <article class="menu">
+        <span class="menu__imagem menu__imagem--logo"></span>
+        <h3 class="menu__titulo">Boas-vindas!</h3>
+        <p class="paragrafo">
+            Que tal mudar a sua vida adotando seu novo melhor amigo?
+        </p>
+        <ul class="menu__botoes">
+            <li class="botao" id="botao__conta">
+                <h4 class="botao--texto">Já tenho conta</h4>
+            </li>
+            <li class="botao" id="botao__cadastrar">
+                <h4 class="botao--texto">Quero me cadastrar</h4>
+            </li>
+        </ul>
+        <span class="menu__imagem__lateral menu__imagem__lateral--splash"></span>
+        <span class="menu__imagem__abaixo menu__imagem__abaixo--pet"></span>
+    </article>
+    <footer class="rodape__1">2022 - Desenvolvido por Matheus H.</footer>
+    <script type="module" src="src/js/index.js"></script>
+    <script src="src/js/controller/carregamento.js"></script>
+</body>
+</html>
